@@ -1,0 +1,7 @@
+<div class="card my-1" *ngIf="selectMovie">
+    <p class="card-header">id: {{selectMovie.id}} title : {{selectMovie.title}}</p>
+    <div class="mb-3 d-flex gap-2">
+        <input type="email" class="form-control" [(ngModel)]="selectMovie.title" id="exampleFormControlInput1">
+        <button class="btn btn-warning">Add</button>
+      </div>
+    </div>

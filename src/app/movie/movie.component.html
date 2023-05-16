@@ -1,0 +1,17 @@
+<div class="col-md-4 offset-4" >
+<app-movie-detail [selectMovie] = "selectedMovie"></app-movie-detail>
+
+
+<div class="card ">
+    <div class="card-header">
+      Featured
+    </div>
+    <ul class="list-group list-group-flush" *ngFor="let movi of movies">
+      <li class="list-group-item d-flex justify-content-between"   (click)="onSelect(movi)">
+        <span><span class="badge bg-primary me-2">{{movi.id}} </span>{{movi.title}} </span>
+      <span>x</span>
+    </li>
+    </ul>
+    
+  </div>
+</div>
